@@ -23,8 +23,8 @@ st.dataframe(fruits_to_show)
 st.header('Fruityvice Fruit Added!')
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response.json())
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+#st.text(fruityvice_response.json())
 
 
 # write your own comment -what does the next line do? 
