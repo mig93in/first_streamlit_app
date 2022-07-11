@@ -21,7 +21,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 st.dataframe(fruits_to_show)
 
 st.header('Fruityvice Fruit Added!')
-fruit_choice = streamlit.text_input('What fruit would you like information about?', 'kiwi')
+fruit_choice = st.text_input('What fruit would you like information about?', 'kiwi')
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
